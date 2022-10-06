@@ -18,7 +18,7 @@
     }
 
     &__main {
-        .navbar{
+        .navbar {
             padding: 20px 0;
         }
 
@@ -40,6 +40,7 @@
             text-indent: 30px;
             font-family: $book;
             font-size: 12px;
+
             &::placeholder {
                 color: #5C5F60;
                 font-family: $book;
@@ -73,18 +74,21 @@
             padding: 0 19px;
             margin-right: 24px;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 color: #fff;
             }
         }
-        .nav-link{
+
+        .nav-link {
             color: $mainDark;
             font-size: 12px;
             margin-right: 24px;
             padding: 0 !important;
-            
+
         }
-        .badge{
+
+        .badge {
             width: 20px;
             height: 20px;
             font-size: 10px;
@@ -94,38 +98,64 @@
             line-height: 14px;
             border: 3px solid #fff;
         }
-        &--avatarArrowColor{
+
+        &--avatarArrowColor {
             color: $mainDark;
-            &:hover{
+
+            &:hover {
                 color: $mainDark
             }
         }
     }
-    &__bottom{
-        .nav{
+
+    &__bottom {
+        .nav {
             border-top: 1px solid #E0E3E3;
         }
-        .nav-item{
 
+        .nav-item {}
 
-        }
-        .nav-link{
+        .nav-link {
             font-family: $medium;
             font-size: 13px;
             line-height: 1.5;
             padding: 16px;
-            color: $mainDark;
+            color: $mainGray;
             letter-spacing: 0.5px;
-            &.active{
+
+            &.active {
                 border-bottom: 2px solid $mainDark;
                 padding-top: 15px;
                 padding-bottom: 15px;
             }
         }
     }
-    .hr{
+
+    .hr {
         width: 100%;
         height: 1px;
         background-color: #E0E3E3;
+    }
+
+    &__breadcrumbs {
+        .breadcrumb {
+            margin-top: 32px;
+            margin-bottom: 40px;
+
+            &-item {
+                font-size: 12px;
+                line-height: 1.5;
+
+                a {
+                    color: $mainDark;
+                    text-decoration: none;
+                }
+
+                &.active {
+                    color: #747778;
+                    font-family: $book;
+                }
+            }
+        }
     }
 }
