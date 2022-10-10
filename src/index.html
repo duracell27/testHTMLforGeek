@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
-    
+
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
   <!-- My CSS -->
@@ -288,10 +288,26 @@
       </div>
       <div class="catalog__filter">
         <div class="catalot__filter-name">Фільтри</div>
-        <div class="catalot__filter-content"></div>
+        <div class="catalot__filter-content"><div class="dropdown">
+          <span>Сортувати за:</span>
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton3"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            За замовчуванням
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+            <li><a class="dropdown-item" href="#">За назвою</a></li>
+            <li><a class="dropdown-item" href="#">За брендом</a></li>
+            <li><a class="dropdown-item" href="#">За ціною</a></li>
+          </ul>
+        </div></div>
       </div>
       <div class="row">
-        <div class="col-6">
+        <div class="col-3">
           <div class="catalog__filters">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
@@ -317,7 +333,7 @@
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                   data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    
+
                   </div>
                 </div>
               </div>
@@ -444,11 +460,127 @@
             </div>
           </div>
         </div>
-        <div class="col-9"></div>
+        <div class="col-9">
+          <div class="catalog__cards">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card__image">
+                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z"
+                        fill="#2D3132" />
+                    </svg>
+                    <img src="img/cards/1.jpg" class="card-img-top" alt="shopcard">
+                    <div class="card__badge">
+                      <span>
+                        ТОП
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-body__top">
+                      <p class="card-text">LOUIS VUITTON</p>
+                      <h5 class="card-title">Темно-сині джинси Louis Vuitton</h5>
+                    </div>
+                    <div class="card-body__bottom">
+                      <div class="card-body__bottom-price">
+                        <span>5 499 ₴</span>
+                        <span>3 799 ₴</span>
+                      </div>
+                      <div class="card-body__bottom-geo">
+                        <span><svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.03017 1.77684C0.562854 3.18058 0.387073 5.39908 1.61645 6.99837L4.99999 11.4L8.38353 6.99837C9.6129 5.39908 9.43712 3.18058 7.9698 1.77684C6.32962 0.207728 3.67036 0.207728 2.03017 1.77684ZM4.99999 6.60001C5.9941 6.60001 6.79999 5.79412 6.79999 4.80001C6.79999 3.80589 5.9941 3.00001 4.99999 3.00001C4.00588 3.00001 3.19999 3.80589 3.19999 4.80001C3.19999 5.79412 4.00588 6.60001 4.99999 6.60001Z" fill="#2D3132"/>
+                          </svg>
+                          Херсон</span>
+                        <span><img src="img/cardAvatar.png" alt="cardAvatar">LoveBrand</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a short card.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Попередня</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link active" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Наступна</a></li>
+            </ul>
+        
+        </div>
       </div>
     </div>
   </section>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container-xxl">
+      <div class="row footer__links">
+        <div class="col-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item">Довідка для покупців</a>
+            <a href="#" class="list-group-item">Отримати підтримку</a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item">Довідка для покупців</a>
+            <a href="#" class="list-group-item">Отримати підтримку</a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item">Довідка для покупців</a>
+            <a href="#" class="list-group-item">Отримати підтримку</a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item">Довідка для покупців</a>
+            <a href="#" class="list-group-item"><img src="img/google-play.jpg" alt="googlePlay"></a>
+          </div>
+        </div>
+      </div>
+      <div class="hr"></div>
+    </div>
+    <div class="container-xxl">
+      <div class="row footer__copy">
+        <div class="col">
+          <p>© 2022 Monvalise</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

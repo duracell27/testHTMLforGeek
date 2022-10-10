@@ -1,0 +1,167 @@
+.catalog {
+    padding-bottom: 112px;
+    &__filter{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    &__filters {
+        .accordion-item {
+            border: none;
+            .accordion-button.collapsed {
+                background-color: #EFF1F1;
+                color: $mainDark;
+                font-size: 14px;
+                font-family: $book;
+                margin-bottom: 1px;
+                &:focus {
+                    outline: none;
+                    border-color: transparent;
+                }
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: $mainDark;
+                font-size: 14px;
+                font-family: $book;
+                background-color: #EFF1F1;
+                
+            }
+        }
+    }
+
+    &__cards {
+        .card {
+            padding: 24px;
+
+            &-body {
+                padding: 0;
+
+                &__bottom {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    &-price {
+                        span {
+                            display: inline-block;
+
+                            &:first-child {
+                                font-family: $book;
+                                font-size: 12px;
+                                line-height: 1.5;
+                                color: #747778;
+                                text-decoration: line-through;
+                            }
+
+                            &:last-child {
+                                font-family: $medium;
+                                font-size: 14px;
+                                line-height: 1.5;
+                                color: $mainDark;
+                            }
+                        }
+                    }
+
+                    &-geo {
+                        text-align: right;
+
+                        span {
+                            display: inline-block;
+
+                            &:first-child {
+                                font-family: $book;
+                                font-size: 12px;
+                                line-height: 1.5;
+                                color: $mainDark;
+                            }
+
+                            img {
+                                margin-right: 8px;
+                            }
+
+                            &:last-child {
+                                font-size: 14px;
+                                line-height: 1.5;
+                                color: $mainDark;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-text {
+                font-family: $medium;
+                font-size: 10px;
+                line-height: 1.5;
+                color: #5C5F60;
+                margin-bottom: 4px;
+            }
+
+            &-title {
+                font-size: 14px;
+                line-height: 1.5;
+                color: $mainDark;
+                margin-bottom: 24px;
+            }
+
+            &__image {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 16px;
+
+                svg {
+                    align-self: flex-end;
+                }
+
+            }
+
+            &__badge {
+                font-size: 10px;
+                line-height: 1.5;
+                padding: 4px 8px;
+                padding-bottom: 2px;
+                background-color: #B4FFF0;
+                border-radius: 4px;
+                align-self: flex-start;
+            }
+        }
+    }
+    .pagination{
+        margin-top: 56px;
+        margin-bottom: 0;
+        justify-content: center;
+        align-items: baseline;
+        .page-item{
+
+            .page-link{
+                border-radius: 20px;
+                font-size: 12px;
+                line-height: 1.5;
+                color: #5C5F60;
+                padding: 5px 13px;
+                border: 2px solid #C4C7C7;
+                margin: 0 4px;
+                width: 34px;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               
+                &.active{
+                    border: 2px solid $mainDark;
+                    color: $mainDark;
+                    width: 40px !important;
+                    height: 40px;
+                }
+                &:first-child{
+                    width: fit-content;
+                }
+                &:last-child{
+                    width: fit-content;
+                }
+            }
+            
+        }
+    }
+}
