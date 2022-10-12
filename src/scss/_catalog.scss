@@ -44,7 +44,7 @@
 
                     &-price {
                         span {
-                            display: inline-block;
+                            display: block;
 
                             &:first-child {
                                 font-family: $book;
@@ -67,7 +67,7 @@
                         text-align: right;
 
                         span {
-                            display: inline-block;
+                            display: block;
 
                             &:first-child {
                                 font-family: $book;
