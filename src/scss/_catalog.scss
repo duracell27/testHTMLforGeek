@@ -251,5 +251,13 @@
         font-size: 14px;
         font-family: $book;
         color: #444748;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        span{
+            font-family: $book;
+            font-size: 14px;
+            columns: #747778;
+        }
     }
 }

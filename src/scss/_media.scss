@@ -1,0 +1,89 @@
+@media (max-width: 375px) {
+    .header {
+        &__top {
+
+            height: 35px;
+            &--text {
+                line-height: 35px;
+                font-size: 12px;
+            }
+
+        }
+
+        &__main {
+            .navbar {
+                padding: 10px 0;
+            }
+
+            .navbar-brand {
+                margin-right: 0px;
+                width: 100%;
+                margin-left: 10px;
+            }
+
+            .form-control {
+                margin-right: 0;
+                margin: 10px;
+                text-indent: 15px;
+            }
+
+            .input-group-text {
+                margin-top: 7px;
+            }
+
+            &--button {
+                display: none;
+            }
+            
+            .wrp{
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        &__bottom {
+            .nav {
+                border-top: 1px solid #E0E3E3;
+            }
+
+            .nav-item {}
+
+            .nav-link {
+                font-size: 11px;
+                padding: 10px;
+                &.active {
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                }
+            }
+        }
+
+        &__breadcrumbs {
+            .breadcrumb {
+                margin-top: 14px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .catalog {
+        .h1{
+            margin-bottom: 10px;
+        }
+        &__filter{  
+            align-items: center;
+    
+            &-content{
+                
+                .dropdown{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    span{
+                        text-align: end;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
