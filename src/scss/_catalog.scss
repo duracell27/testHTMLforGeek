@@ -1,9 +1,59 @@
 .catalog {
+    .h1{
+        font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+    }
     padding-bottom: 112px;
     &__filter{
         display: flex;
         justify-content: space-between;
         margin-bottom: 24px;
+        &-name{
+            font-size: 22px;
+            font-family: $book;
+            color: #5C5F60;
+            line-height: 1.5;
+        }
+        &-content{
+            span{
+                font-size: 12px;
+                color: #5C5F60;
+            }
+            button{
+                background-color: #EFF1F1;
+                border-radius: 20px;
+                font-size: 12px;
+                line-height: 1.5;
+                padding: inherit;
+                padding-left: 12px;
+                border: none;
+                margin-left: 8px;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            .dropdown-toggle::after{
+                content: "";
+                width: 30px;
+                height: 34px;
+                background: url("../img/arrowDown.png");
+                background-repeat: no-repeat;
+                background-position: 8px 15px;
+                border: none;
+                vertical-align: middle;
+                border-left: 2px solid #fff;
+            }
+            .show.dropdown-toggle::after{
+                transform:rotate(180deg);
+                border-right: 2px solid #fff;
+                border-left: none;
+                background-position: 10px 14px;
+            }
+            .dropdown-menu{
+                background-color: #EFF1F1;
+            }
+        }
     }
     &__filters {
         .accordion-item {
@@ -13,10 +63,13 @@
                 color: $mainDark;
                 font-size: 14px;
                 font-family: $book;
-                margin-bottom: 1px;
+                margin-bottom: 2px;
+                display: flex;
+                align-items: baseline;
                 &:focus {
                     outline: none;
                     border-color: transparent;
+                    
                 }
             }
 
@@ -26,6 +79,9 @@
                 font-family: $book;
                 background-color: #EFF1F1;
                 
+            }
+            .accordion-button:focus{
+                box-shadow: none;
             }
         }
     }
@@ -123,7 +179,23 @@
                 padding-bottom: 2px;
                 background-color: #B4FFF0;
                 border-radius: 4px;
+                color: $mainDark;
                 align-self: flex-start;
+            }
+            &__badge-grey{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    font-size: 10px;
+                    line-height: 1.5;
+                    padding: 4px 8px;
+                    padding-bottom: 2px;
+                    background-color: #E0E3E3;
+                    border-radius: 4px;
+                    color: $mainDark;
+                    align-self: flex-start;
+                }
             }
         }
     }
@@ -163,5 +235,21 @@
             }
             
         }
+    }
+    .form-check-input:checked{
+        background-color: $mainDark;
+        border-color: $mainDark;
+    }
+    .form-check-input{
+        border: 2px solid #C4C7C7;
+        &:focus{
+            
+            box-shadow: none;
+        }
+    }
+    .form-check-label{
+        font-size: 14px;
+        font-family: $book;
+        color: #444748;
     }
 }

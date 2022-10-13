@@ -17,6 +17,7 @@
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/ef4238892f.js" crossorigin="anonymous"></script>
 
+
   <title>Shop</title>
 </head>
 
@@ -287,8 +288,8 @@
         <h1 class="h1">Каталог одягу</h1>
       </div>
       <div class="catalog__filter">
-        <div class="catalot__filter-name">Фільтри</div>
-        <div class="catalot__filter-content">
+        <div class="catalog__filter-name">Фільтри</div>
+        <div class="catalog__filter-content">
           <div class="dropdown">
             <span>Сортувати за:</span>
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown"
@@ -304,160 +305,252 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-3">
+        <div class="col-12 col-sm-12 col-md-3">
           <div class="catalog__filters">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
+                <h2 class="accordion-header" id="flush-heading1">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Категорії
                   </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Ціна
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-heading1"
                   data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                      <label class="form-check-label" for="flexCheckChecked">Куртки</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                      <label class="form-check-label" for="flexCheckChecked">Штани</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                      <label class="form-check-label" for="flexCheckChecked">Футболки</label>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Продавець
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Ціна
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-heading2"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Бренд
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Продавець
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">LoveBrand</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Brandear</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                        <label class="form-check-label" for="flexCheckChecked">SellBuy</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Стать
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Бренд
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Gucci</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Canali</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                        <label class="form-check-label" for="flexCheckChecked">LOUIS VUITTON</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Розмір
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      Стать
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Жінкам</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Чоловікам</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                        <label class="form-check-label" for="flexCheckChecked">Унісекс</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Колір
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      Розмір
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-heading6"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">XL</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">X</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                        <label class="form-check-label" for="flexCheckChecked">M</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Матеріал
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      Колір
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-heading7"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Рожевий</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Зелений</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                        <label class="form-check-label" for="flexCheckChecked">Червоний</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Сезон
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      Матеріал
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-heading8"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Бавовна</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">В</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                        <label class="form-check-label" for="flexCheckChecked">Білгороді</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Стиль
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                    exciting happening here in terms of content, but just filling up the space to make it look, at least
-                    at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading9">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                      Сезон
+                    </button>
+                  </h2>
+                  <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-heading9"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Літо</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Осінь</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                        <label class="form-check-label" for="flexCheckChecked">Зима</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-heading10">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                      Стиль
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-heading10"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Стиль1</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked">Стиль2</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                        <label class="form-check-label" for="flexCheckChecked">Стиль3</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-9">
+        <div class="col-12 col-sm-12 col-md-9">
           <div class="catalog__cards">
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
@@ -547,7 +640,7 @@
                         fill="#2D3132" />
                     </svg>
                     <img src="img/cards/3.jpg" class="card-img-top" alt="shopcard">
-                    <div style="display:none;" class="card__badge">
+                    <div style="visibility:hidden;" class="card__badge">
                       <span>
                         ТОП
                       </span>
@@ -586,7 +679,7 @@
                         fill="#2D3132" />
                     </svg>
                     <img src="img/cards/4.jpg" class="card-img-top" alt="shopcard">
-                    <div style="display:none;" class="card__badge">
+                    <div style="visibility:hidden;" class="card__badge">
                       <span>
                         ТОП
                       </span>
@@ -619,17 +712,23 @@
               <div class="col">
                 <div class="card h-100">
                   <div class="card__image">
-                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z"
-                        fill="#2D3132" />
-                    </svg>
+                    <div class="card__badge-grey">
+                      <span>
+                        organic
+                      </span>
+                      <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z"
+                          fill="#2D3132" />
+                      </svg>
+                    </div>
                     <img src="img/cards/5.jpg" class="card-img-top" alt="shopcard">
-                    <div style="display:none;" class="card__badge">
-                      <span >
+                    <div style="visibility:hidden;" class="card__badge">
+                      <span>
                         ТОП
                       </span>
                     </div>
+
                   </div>
                   <div class="card-body">
                     <div class="card-body__top">
@@ -664,8 +763,8 @@
                         fill="#2D3132" />
                     </svg>
                     <img src="img/cards/6.jpg" class="card-img-top" alt="shopcard">
-                    <div style="display:none;" class="card__badge">
-                      <span >
+                    <div style="visibility:hidden;" class="card__badge">
+                      <span>
                         ТОП
                       </span>
                     </div>
@@ -703,8 +802,8 @@
                         fill="#2D3132" />
                     </svg>
                     <img src="img/cards/7.jpg" class="card-img-top" alt="shopcard">
-                    <div style="display:none;" class="card__badge">
-                      <span >
+                    <div style="visibility:hidden;" class="card__badge">
+                      <span>
                         ТОП
                       </span>
                     </div>
@@ -742,8 +841,8 @@
                         fill="#2D3132" />
                     </svg>
                     <img src="img/cards/8.jpg" class="card-img-top" alt="shopcard">
-                    <div style="display:none;" class="card__badge">
-                      <span >
+                    <div style="visibility:hidden;" class="card__badge">
+                      <span>
                         ТОП
                       </span>
                     </div>
@@ -781,8 +880,8 @@
                         fill="#2D3132" />
                     </svg>
                     <img src="img/cards/9.jpg" class="card-img-top" alt="shopcard">
-                    <div style="display:none;" class="card__badge">
-                      <span >
+                    <div style="visibility:hidden;" class="card__badge">
+                      <span>
                         ТОП
                       </span>
                     </div>
@@ -830,25 +929,37 @@
   <footer class="footer">
     <div class="container-xxl">
       <div class="row footer__links">
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="list-group">
             <a href="#" class="list-group-item">Довідка для покупців</a>
             <a href="#" class="list-group-item">Отримати підтримку</a>
+            <a href="#" class="list-group-item">Як купувати</a>
+            <a href="#" class="list-group-item">Як залишити корисний відгук</a>
+            <a href="#" class="list-group-item">Програма Захисту Покупців</a>
+            <a href="#" class="list-group-item">Рекомендації з безпечних покупок</a>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="list-group">
-            <a href="#" class="list-group-item">Довідка для покупців</a>
-            <a href="#" class="list-group-item">Отримати підтримку</a>
+            <a href="#" class="list-group-item">Довідка для продавців</a>
+            <a href="#" class="list-group-item">Як почати продавати</a>
+            <a href="#" class="list-group-item">Тарифи</a>
+            <a href="#" class="list-group-item">Угода користувача</a>
+            <a href="#" class="list-group-item">Політика конфіденційності</a>
+            <a href="#" class="list-group-item">Правила користування порталом</a>
+            <a href="#" class="list-group-item">Бонусна програма</a>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="list-group">
-            <a href="#" class="list-group-item">Довідка для покупців</a>
-            <a href="#" class="list-group-item">Отримати підтримку</a>
+            <a href="#" class="list-group-item">Про нас</a>
+            <a href="#" class="list-group-item">Довідка та FAQ</a>
+            <a href="#" class="list-group-item">Захист легальності контенту</a>
+            <a href="#" class="list-group-item">Адміністрація</a>
+            <a href="#" class="list-group-item">Вакансії</a>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="list-group">
             <a href="#" class="list-group-item">Довідка для покупців</a>
             <a href="#" class="list-group-item"><img src="img/google-play.jpg" alt="googlePlay"></a>
